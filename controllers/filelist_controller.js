@@ -2,10 +2,10 @@ const File_Col = require('../models/filelist');
 const OSS = require('ali-oss');
 
 const client = new OSS({
-  region: '',
-  accessKeyId: '',
-  accessKeySecret: '',
-  bucket: ''
+  region: 'oss-cn-hangzhou',
+  accessKeyId: 'LTAI4FyQX8smqgkqLWHbyn1B',
+  accessKeySecret: 'CXqjmk548BOmCTrDJYJ2XfO168Z5Uo',
+  bucket: 'yohostarrynight'
 });
 
 const uploadSDK = async (ctx,next) => {
