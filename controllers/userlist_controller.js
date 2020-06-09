@@ -10,7 +10,7 @@ const login = async (ctx,next) => {
   if(res) {
     const token  = jwt.sign({
       data: res.username
-    },'',{ expiresIn: '2h' });
+    },'lcy',{ expiresIn: '2h' });
     ctx.body = {
       code: 0,
       message: 'login successfully',
